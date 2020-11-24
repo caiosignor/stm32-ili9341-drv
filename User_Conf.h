@@ -65,6 +65,13 @@
 /** Lcd Reset Pin **/
 #define LCD_RST_PIN RST_Pin
 
+#define ILI9341_INVERT_COLOR 0
+#if ILI9341_INVERT_COLOR
+# define ILI9341_COLOR 0x20
+#else
+# define ILI9341_COLOR 0x21
+#endif
+
 /***********************
  *   Touch Interface
  ***********************/
